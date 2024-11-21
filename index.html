@@ -1,20 +1,776 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>App</title>
+    <title>РІЕЛ ДРІМ ХХІ ВІК</title>
+    <link rel="icon" type="image/svg" href="./src/img/logo.svg" sizes="16x16" />
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
-    <header class="header"><div class="container"></div></header>
+    <header class="header">
+      <div class="container">
+        <nav class="navigator">
+          <a class="logo-link" href="./index.html">
+            <svg class="logo-icon" width="52" height="52">
+              <use class="logo" href="./src/img/sprite.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <button
+            class="mobile-menu-btn js-open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu-container"
+          >
+            <svg width="30" height="24" aria-label="Switch menus">
+              <use href="./src/img/sprite.svg#icon-hamburger-menu"></use>
+            </svg>
+          </button>
+          <!-- mobile-menu -->
+          <!-- mobile-menu end -->
+          <ul class="navigator-list">
+            <li class="list-item">
+              <a href="" class="nav-link">Про комплекс</a>
+            </li>
+            <li class="list-item"><a href="" class="nav-link">Для кого</a></li>
+            <li class="list-item">
+              <a href="" class="nav-link">Про обладнання</a>
+            </li>
+            <li class="list-item"><a href="" class="nav-link">Переваги</a></li>
+            <li class="list-item">
+              <a href="" class="nav-link">Етапи роботи</a>
+            </li>
+            <li class="list-item"><a href="" class="nav-link">Контакти</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <main>
-      <section></section>
+      <section class="hero">
+        <div class="container">
+          <p class="limited-text">ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПоВІДАЛЬНІСТЮ</p>
+          <h1 class="main-title">РІЕЛ ДРІМ <span>ХХІ ВІК</span></h1>
+          <p class="desc">
+            Офіційний авторизований дистрибʼютор
+            <span>ТОВ НВО «СОРТУВАЛЬНІ МАШИНИ»</span>
+          </p>
+          <a class="btn-base hero-btn" href="">залишити запит</a>
+        </div>
+      </section>
+      <section class="about-technology" id="about-technology">
+        <div class="container">
+          <div class="about-container">
+            <h3 class="title">СС</h3>
+            <div class="desc-box">
+              <p class="accent-desc">
+                — це комплекс високотехнологічного, інноваційного обладнання,
+              </p>
+              <p class="desc">
+                яке дозволить кожному переробнику, сільгоспвиробнику, чи
+                елеватору впровадити один із найважливіших елементів
+                LEAN-концепції на своїх підприємствах та підвищити ефективність
+                виробництва
+              </p>
+            </div>
+          </div>
+          <picture>
+            <source
+              srcset="
+                ./img/portfolio-img/desktop/porfolio1-desktop-1x.jpg 1x,
+                ./img/portfolio-img/desktop/porfolio1-desktop-2x.jpg 2x,
+                ./img/portfolio-img/desktop/porfolio1-desktop-3x.jpg 3x
+              "
+              media="(min-width: 1200px)"
+              width="360"
+              height="300"
+            />
+            <source
+              srcset="
+                ./src/img/about-technology/mobile-complex-1x.png 1x,
+                ./src/img/about-technology/mobile-complex-2x.png 2x
+              "
+              width="287"
+              height="324"
+            />
+            <img
+              class="image"
+              src="./src/img/about-technology/mobile-complex-1x.png"
+              alt="Сортувальна машина"
+              width="287"
+              height="324"
+            />
+          </picture>
+          <div class="you-get-container">
+            <span class="attention-sign">!</span>
+            <p class="you-get-text">
+              <span>Ви отримаєте додатковий прибуток</span> з відходів очищення
+              зернових та олійних культур шляхом вилучення всієї олійної або
+              зернової домішки (зерно, подрібнене ядро, крупка)
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="our-equipment" id="for-whom">
+        <div class="container">
+          <h2 class="title">
+            Наше обладнання буде <span>найбільш ефективним для:</span>
+          </h2>
+          <div class="main-reason-container">
+            <span class="card-number">1</span>
+            <div class="card-text-box">
+              <h3 class="card-title">Маслоекстракційних заводів, маслоцехів</h3>
+              <p class="card-text-accent">
+                Відсортує олійну домішку з відходів
+                <span>(від 20 до 50%)</span> та з лушпиння
+                <span>(від 2 до 10%)</span>
+              </p>
+              <p class="card-text">
+                Навіть у тих випадках, коли ваша лабораторія показує, що в них
+                нічого немає
+              </p>
+            </div>
+          </div>
+          <div class="verify-container">
+            <p class="verify-title">*перевірити дуже легко і це безкоштовно</p>
+            <p class="verify-text">
+              Просто замовте дослідження від наших спеціалістів і ви багато
+              цікавого дізнаєтесь про свої втрати
+            </p>
+            <a class="btn-base verify-btn" href="">ХОЧУ ДОСлІДЖЕННЯ</a>
+          </div>
+          <div class="also-for-container">
+            <h2 class="also-title">Також для:</h2>
+            <ul class="also-list">
+              <li class="list-item">
+                <span class="card-number">2</span>
+                <div class="card-text-box">
+                  <h3 class="card-title">
+                    Виробників круп, борошномельних виробництв
+                  </h3>
+                  <p class="card-text">
+                    Доочищення зернових відходів, скорочення втрат, очищення від
+                    дрібних домішок, пилу
+                  </p>
+                </div>
+              </li>
+              <li class="list-item">
+                <span class="card-number">3</span>
+                <div class="card-text-box">
+                  <h3 class="card-title">Комбікормових заводів</h3>
+                  <p class="card-text">
+                    Поділ відходів очищення на фракції: бур'янову й органічну та
+                    олійну, зернову (зерно, подрібнене ядро, крупка тощо)
+                  </p>
+                </div>
+              </li>
+              <li class="list-item">
+                <span class="card-number">4</span>
+                <div class="card-text-box">
+                  <h3 class="card-title">Виробників пелет та брикетів</h3>
+                  <p class="card-text">
+                    Знежирює органічне паливо, що завантажується в котли,
+                    запобігаючи забрудненню котла
+                  </p>
+                </div>
+              </li>
+              <li class="list-item">
+                <span class="card-number">5</span>
+                <div class="card-text-box">
+                  <h3 class="card-title">
+                    Фермерських господарств, елеваторів
+                  </h3>
+                  <p class="card-text">
+                    Установка сортувальників, як у виробничий процес, так і у
+                    вигляді окремої машини
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="equipment-works" id="about-equipment">
+        <div class="container">
+          <div class="title-container">
+            <h2 class="title">Наше обладнання</h2>
+            <div class="subtitle-container">
+              <p class="subtitle">успішно працює</p>
+              <p class="desc">з будь-якими культурами</p>
+            </div>
+          </div>
+          <div class="allows-container">
+            <p class="give-text">
+              <span>І дозволяє отримати до 3000 грн додаткового доходу</span> з
+              однієї тонни відходів соняшнику та до 1500 грн з тонни відходів
+              пшениці
+            </p>
+            <p class="get-calc">
+              *щоб отримати розрахунок втрат вашого виробництва, замовте
+              консультацію
+            </p>
+            <a class="btn-base equip-btn" href="">ХОЧУ РОЗРАХУНОК</a>
+          </div>
+          <div class="ready-container">
+            <div class="ready-text-container">
+              <h2 class="ready-title">Ми готові</h2>
+              <p class="ready-subtitle">впевнено стверджувати,</p>
+              <p class="ready-desc">
+                що наше інноваційне обладнання
+                <span>не має аналогів на ринку</span> України. Навіть більше -
+                ми намагались, але не змогли знайти аналогів в світі
+              </p>
+            </div>
+            <ul class="ready-list">
+              <li class="list-item">
+                <p class="item-text">
+                  Для вашої зручності наші лінії обладнано ЧПК. Також є
+                  можливість керування та контролю через смарт-пристрої
+                </p>
+              </li>
+              <li class="list-item">
+                <p class="item-text">
+                  Модульна конструкція дозволяє індивідуалізувати лінію під ваші
+                  технологічні особливості та вільну виробничу площу
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="problem section">
+        <div class="we-first-container">
+          <p class="we-first-text">МИ ПЕРШІ, ХТО ЗМІГ ЇЇ ВИРІШИТИ!</p>
+        </div>
+        <div class="container">
+          <div class="problem-title-container">
+            <h2 class="problem-title">Проблема виносу ядра з лушпинням</h2>
+            <p class="problem-desc">
+              є глобальною для переробників олійно-жирової промисловості
+            </p>
+          </div>
+          <div class="our-exp-container">
+            <svg class="logo-icon" width="64" height="64">
+              <use class="logo" href="./src/img/sprite.svg#icon-logo"></use>
+            </svg>
+            <p class="exp-text">
+              Понад 20 років досвіду в агропромисловому комплексі
+            </p>
+          </div>
+          <picture>
+            <source
+              srcset="
+                ./img/portfolio-img/desktop/porfolio1-desktop-1x.jpg 1x,
+                ./img/portfolio-img/desktop/porfolio1-desktop-2x.jpg 2x,
+                ./img/portfolio-img/desktop/porfolio1-desktop-3x.jpg 3x
+              "
+              media="(min-width: 1200px)"
+              width="360"
+              height="300"
+            />
+            <source
+              srcset="
+                ./src/img/problem/mobile-photo-1x.png 1x,
+                ./src/img/problem/mobile-photo-2x.png 2x
+              "
+              width="320"
+              height="240"
+            />
+            <img
+              class="image"
+              src="./src/img/problem/mobile-photo-1x.png"
+              alt="Наші фахівці"
+              width="320"
+              height="240"
+            />
+          </picture>
+          <ul class="desc-list">
+            <li class="list-item">
+              Вирощування, зберігання, переробка сільгосппродукції та брикетів –
+              це основні напрямки діяльності, в яких ми маємо досвід
+            </li>
+            <li class="list-item">
+              Наші фахівці розробляли та тестували сортувальники сипучих з 2010
+              року. Сьогодні СС успішно експлуатується на діючих
+              олійноекстракційних заводах України
+            </li>
+          </ul>
+          <picture>
+            <source
+              srcset="
+                ./img/portfolio-img/desktop/porfolio1-desktop-1x.jpg 1x,
+                ./img/portfolio-img/desktop/porfolio1-desktop-2x.jpg 2x,
+                ./img/portfolio-img/desktop/porfolio1-desktop-3x.jpg 3x
+              "
+              media="(min-width: 1200px)"
+              width="360"
+              height="300"
+            />
+            <source
+              srcset="
+                ./src/img/problem/certificate-1x.png 1x,
+                ./src/img/problem/certificate-2x.png 2x
+              "
+              width="200"
+              height="282"
+            />
+            <img
+              class="certificate-image"
+              src="./src/img/problem/certificate-1x.png"
+              alt="сертифікат"
+              width="200"
+              height="282"
+            />
+          </picture>
+        </div>
+      </section>
+      <section class="add-advantages" id="advantages">
+        <div class="container">
+          <div class="title-container">
+            <h2 class="title">ДОДАТКОВІ ПЕРЕВАГИ</h2>
+            <p class="subtitle">ОБЛАДНАННЯ</p>
+          </div>
+          <ul class="advantages-list">
+            <li class="list-item">
+              <svg class="item-image" width="93" height="93">
+                <use href="./src/img/sprite.svg#icon-advantages-01"></use>
+              </svg>
+              <p class="item-title">
+                Економічність: енергоспоживання СС-12 становить до 7 кВт/годину
+              </p>
+              <p class="item-text">
+                Ми не можемо порівнювати енерговитрати з аналогічним
+                обладнанням, бо його не існує, але напевно ви розумієте, що це
+                дуже ощадливо
+              </p>
+            </li>
+            <li class="list-item">
+              <svg class="item-image" width="158" height="106">
+                <use href="./src/img/sprite.svg#icon-advantages-02"></use>
+              </svg>
+              <p class="item-title">
+                Можливість встановлення СС у технологічну лінію діючого
+                виробництва
+              </p>
+              <p class="item-text">
+                Ви, як господарник, точно розумієте проблему пошуку площі для
+                встановлення обладнання не передбаченого технологічною схемою
+              </p>
+            </li>
+            <li class="list-item">
+              <svg class="item-image" width="153" height="90">
+                <use href="./src/img/sprite.svg#icon-advantages-03"></use>
+              </svg>
+              <p class="item-title">
+                Достатньо одного оператора для обслуговування
+              </p>
+              <p class="item-text">
+                Все просто - вам не потрібно заводити окремі штатні одиниці. Ми
+                навчимо будь-якого вашого співробітника обслуговувати і
+                контролювати роботу лінії майже без відриву від основної
+                діяльності
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="equipment-installed">
+        <div class="container">
+          <div class="title-container">
+            <h2 class="title">Наше обладнання</h2>
+            <p class="subtitle">вже встановлено та працює на:</p>
+          </div>
+          <ul class="marquee-container marquee-list">
+            <li class="list-item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/portfolio-img/desktop/porfolio1-desktop-1x.jpg 1x,
+                    ./img/portfolio-img/desktop/porfolio1-desktop-2x.jpg 2x,
+                    ./img/portfolio-img/desktop/porfolio1-desktop-3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                  width="360"
+                  height="300"
+                />
+                <source
+                  srcset="
+                    ./src/img/equip-installed/company-01-mobile-1x.png 1x,
+                    ./src/img/equip-installed/company-01-mobile-2x.png 2x
+                  "
+                  width="176"
+                  height="173"
+                />
+                <img
+                  class="company-image"
+                  src="./src/img/equip-installed/company-01-mobile-1x.png"
+                  alt="ТДВ “УкрОліяПродукт”"
+                  width="176"
+                  height="173"
+                />
+              </picture>
+              <p class="company-name">ТДВ “УкрОліяПродукт”</p>
+            </li>
+            <li class="list-item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/portfolio-img/desktop/porfolio1-desktop-1x.jpg 1x,
+                    ./img/portfolio-img/desktop/porfolio1-desktop-2x.jpg 2x,
+                    ./img/portfolio-img/desktop/porfolio1-desktop-3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                  width="360"
+                  height="300"
+                />
+                <source
+                  srcset="
+                    ./src/img/equip-installed/company-02-mobile-1x.png 1x,
+                    ./src/img/equip-installed/company-02-mobile-2x.png 2x
+                  "
+                  width="176"
+                  height="173"
+                />
+                <img
+                  class="company-image"
+                  src="./src/img/equip-installed/company-02-mobile-1x.png"
+                  alt="ТОВ “Потоки”"
+                  width="176"
+                  height="173"
+                />
+              </picture>
+              <p class="company-name">ТОВ “Потоки”</p>
+            </li>
+            <li class="list-item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/portfolio-img/desktop/porfolio1-desktop-1x.jpg 1x,
+                    ./img/portfolio-img/desktop/porfolio1-desktop-2x.jpg 2x,
+                    ./img/portfolio-img/desktop/porfolio1-desktop-3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                  width="360"
+                  height="300"
+                />
+                <source
+                  srcset="
+                    ./src/img/equip-installed/company-03-mobile-1x.png 1x,
+                    ./src/img/equip-installed/company-03-mobile-2x.png 2x
+                  "
+                  width="176"
+                  height="173"
+                />
+                <img
+                  class="company-image"
+                  src="./src/img/equip-installed/company-03-mobile-1x.png"
+                  alt="ТОВ “Люкс Ойл”"
+                  width="176"
+                  height="173"
+                />
+              </picture>
+              <p class="company-name">ТОВ “Люкс Ойл”</p>
+            </li>
+            <li class="list-item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/portfolio-img/desktop/porfolio1-desktop-1x.jpg 1x,
+                    ./img/portfolio-img/desktop/porfolio1-desktop-2x.jpg 2x,
+                    ./img/portfolio-img/desktop/porfolio1-desktop-3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                  width="360"
+                  height="300"
+                />
+                <source
+                  srcset="
+                    ./src/img/equip-installed/company-04-mobile-1x.png 1x,
+                    ./src/img/equip-installed/company-04-mobile-2x.png 2x
+                  "
+                  width="176"
+                  height="173"
+                />
+                <img
+                  class="company-image"
+                  src="./src/img/equip-installed/company-04-mobile-1x.png"
+                  alt="ПП “Віктор і К”"
+                  width="176"
+                  height="173"
+                />
+              </picture>
+              <p class="company-name">ПП “Віктор і К”</p>
+            </li>
+            <li class="list-item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/portfolio-img/desktop/porfolio1-desktop-1x.jpg 1x,
+                    ./img/portfolio-img/desktop/porfolio1-desktop-2x.jpg 2x,
+                    ./img/portfolio-img/desktop/porfolio1-desktop-3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                  width="360"
+                  height="300"
+                />
+                <source
+                  srcset="
+                    ./src/img/equip-installed/company-05-mobile-1x.png 1x,
+                    ./src/img/equip-installed/company-05-mobile-2x.png 2x
+                  "
+                  width="176"
+                  height="173"
+                />
+                <img
+                  class="company-image"
+                  src="./src/img/equip-installed/company-05-mobile-1x.png"
+                  alt="ТОВ “Гідросенд”"
+                  width="176"
+                  height="173"
+                />
+              </picture>
+              <p class="company-name">ТОВ “Гідросенд”</p>
+            </li>
+          </ul>
+          <div class="our-equipment-container">
+            <svg class="equip-icon" width="92" height="92">
+              <use class="logo" href="./src/img/sprite.svg#icon-logo"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section class="how-works" id="work-stages">
+        <div class="container">
+          <h2 class="title">ЯК МИ ПРАЦЮЄМО:</h2>
+          <ul class="steps-list">
+            <li class="list-item">
+              <p class="step-number">Етап 1</p>
+              <p class="step-name">Відбір проб</p>
+              <ul class="steps-text-list">
+                <li class="text-item">
+                  Після узгодження представники компанії виїжджають на
+                  підприємство до будь-якого регіону України для відбору зразків
+                  відходів.
+                </li>
+                <li class="text-item">
+                  Щоб прискорити процес, можна скористатися послугами пошти чи
+                  кур'єрської доставки
+                </li>
+              </ul>
+            </li>
+            <li class="list-item">
+              <p class="step-number">Етап 2</p>
+              <p class="step-name">
+                Попередній розрахунок економічної доцільності
+              </p>
+              <ul class="steps-text-list">
+                <li class="text-item">
+                  Зразки пропускаються через наше обладнання з обов'язковою
+                  відеофіксацією. Експерти підраховують вихід фракцій у
+                  відсотковому співвідношенні.
+                </li>
+                <li class="text-item">
+                  На цьому етапі ви розумієте втрати та скільки додаткового
+                  прибутку зможете отримати завдяки нашій лінії.
+                </li>
+                <li class="text-item">
+                  Проводиться попередній розрахунок вартості обладнання виходячи
+                  з потреб і виробничих особливостей
+                </li>
+              </ul>
+            </li>
+            <li class="list-item">
+              <p class="step-number">Етап 3</p>
+              <p class="step-name">Інжиніринг</p>
+              <ul class="steps-text-list">
+                <li class="text-item">
+                  У разі погодження всіх умов, наші фахівці проведуть низку
+                  консультацій і замірів, та розпочнуть розробку індивідуального
+                  проєкту
+                </li>
+              </ul>
+            </li>
+            <li class="list-item">
+              <p class="step-number">Етап 4</p>
+              <p class="step-name">Запуск виробництва</p>
+              <ul class="steps-text-list">
+                <li class="text-item">
+                  Після погодження технічного завдання та підписання договору
+                  сортувальна лінія виготовляється та встановлюється на ваше
+                  виробництво.
+                </li>
+                <li class="text-item">
+                  Термін виготовлення залежить від завантаження виробництва. Але
+                  ми будемо докладати максимум зусиль, щоб ви отримали
+                  обладнання в комфортні строки
+                </li>
+              </ul>
+            </li>
+            <li class="list-item">
+              <p class="step-number">Етап 5</p>
+              <p class="step-name">Консультації, пуск та налагодження</p>
+              <ul class="steps-text-list">
+                <li class="text-item">
+                  Виконуємо монтаж, робимо пусконалагоджувальні роботи.
+                  Проводимо консультації для вашого персоналу
+                </li>
+              </ul>
+            </li>
+            <li class="list-item">
+              <p class="step-number">Етап 6</p>
+              <p class="step-name">
+                Гарантійне та післягарантійне обслуговування
+              </p>
+              <ul class="steps-text-list">
+                <li class="text-item">
+                  Наше обладнання готове для роботи 24/7/365. Ми надаємо 1 рік
+                  гарантії!
+                </li>
+                <li class="text-item">
+                  Це означає, що ми завжди на зв'язку і готові прийти вам на
+                  допомогу за першим запитом. Після гарантії, ви так само
+                  впевнено можете розраховувати на нашу підтримку
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <p class="dont-lose">
+            Не прогавте можливість отримати безкоштовну консультацію від нашого
+            фахівця
+          </p>
+          <a class="btn-base works-btn" href="">ХОЧУ консультацію</a>
+        </div>
+      </section>
     </main>
-    <footer class="footer"><div class="container"></div></footer>
+    <footer class="footer" id="footer">
+      <div class="container">
+        <a class="logo-link" href="./index.html">
+          <div class="footer-logo-container">
+            <svg class="footer-icon" width="56" height="56">
+              <use class="logo" href="./src/img/sprite.svg#icon-logo"></use>
+            </svg>
+
+            <p class="company-name">
+              ТОВ <br />
+              "РІЕЛ ДРІМ ХХІ ВІК"
+            </p>
+          </div>
+        </a>
+        <address class="contacts-container">
+          <p class="contacts-title">НАШІ КОНТАКТИ:</p>
+          <ul class="contacts-list">
+            <li class="list-item">
+              <span>Директор з розвитку</span> - 097 798 99 44
+            </li>
+            <li class="list-item">
+              <span>Відділ комунікації</span> - 066 248 31 91
+            </li>
+            <li class="list-item">
+              <span>Технічний директор</span> - 097 086 42 25
+            </li>
+          </ul>
+          <a class="contacts-mail-link" href="mailto:sortingmachineua@gmail.com"
+            ><div class="contacts-mail-box">
+              <svg width="16" height="11">
+                <use href="./src/img/sprite.svg#icon-gmail"></use>
+              </svg>
+              <p class="mail">sortingmachineua@gmail.com</p>
+            </div></a
+          >
+        </address>
+        <div class="rights-container">
+          <a class="privacy-link" href="" target="_blank" rel="nofollow"
+            >Політика конфіденційності</a
+          >
+          <p class="rights-text">ТОВ "РІЕЛ ДРІМ ХХІ ВІК" Всі права захищені</p>
+        </div>
+        <ul class="social-list">
+          <li class="list-item">
+            <a href="" target="_blank" rel="nofollow">
+              <img
+                src="./src/img/footer-insta.svg"
+                alt="instagram logo"
+                width="28"
+                height="28"
+            /></a>
+          </li>
+          <li class="list-item">
+            <a href="" target="_blank" rel="nofollow">
+              <svg class="footer-icon" width="28" height="28">
+                <use
+                  class="logo"
+                  href="./src/img/sprite.svg#icon-facebook"
+                ></use></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!--------------------MOBILE-MENU------------------->
+    <div class="menu-container js-menu-container" id="mobile-menu-container">
+      <div class="mobile-menu">
+        <div class="mobile-control-menu">
+          <a class="logo-link" href="./index.html">
+            <svg class="logo-icon" width="52" height="52">
+              <use class="logo" href="./src/img/sprite.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <button class="close-button-menu js-close-menu">
+            <img
+              src="./src/img/svg/close-menu.svg"
+              alt="close-menu"
+              width="20"
+              height="20"
+            />
+          </button>
+        </div>
+        <div>
+          <ul class="mobile-menu-list">
+            <li class="list-item">
+              <a href="#about-technology" class="mobile-menu-link"
+                >Про комплекс</a
+              >
+            </li>
+            <li class="list-item">
+              <a href="#for-whom" class="mobile-menu-link">Для кого</a>
+            </li>
+            <li class="list-item">
+              <a href="#about-equipment" class="mobile-menu-link"
+                >Про обладнання</a
+              >
+            </li>
+            <li class="list-item">
+              <a href="#advantages" class="mobile-menu-link">Переваги</a>
+            </li>
+            <li class="list-item">
+              <a href="#work-stages" class="mobile-menu-link">Етапи роботи</a>
+            </li>
+            <li class="list-item">
+              <a href="#footer" class="mobile-menu-link">Контакти</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--------------------MOBILE-MENU-END------------------->
+
+    <script src="./src/js/marquee.js" type="module"></script>
+    <script defer src="./src/js/mobile-menu.js"></script>
+    <script src="./src/js/backToTop.js" type="module"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

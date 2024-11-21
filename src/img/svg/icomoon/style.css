@@ -1,0 +1,40 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-advantages-01 {
+  width: 0.9892578125em;
+}
+
+.icon-advantages-02 {
+  width: 1.4951171875em;
+}
+
+.icon-advantages-03 {
+  width: 1.6923828125em;
+}
+
+.icon-gmail {
+  width: 1.4541015625em;
+}
+
+.icon-hamburger-menu {
+  width: 1.4287109375em;
+}
+
+.icon-our-machine-arrow {
+  width: 0.3955078125em;
+}
