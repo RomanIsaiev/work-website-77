@@ -36,21 +36,25 @@
               <use href="./src/img/sprite.svg#icon-hamburger-menu"></use>
             </svg>
           </button>
-          <!-- mobile-menu -->
-          <!-- mobile-menu end -->
           <ul class="navigator-list">
             <li class="list-item">
-              <a href="" class="nav-link">Про комплекс</a>
+              <a href="#about-technology" class="menu-link">Про комплекс</a>
             </li>
-            <li class="list-item"><a href="" class="nav-link">Для кого</a></li>
             <li class="list-item">
-              <a href="" class="nav-link">Про обладнання</a>
+              <a href="#for-whom" class="menu-link">Для кого</a>
             </li>
-            <li class="list-item"><a href="" class="nav-link">Переваги</a></li>
             <li class="list-item">
-              <a href="" class="nav-link">Етапи роботи</a>
+              <a href="#about-equipment" class="menu-link">Про обладнання</a>
             </li>
-            <li class="list-item"><a href="" class="nav-link">Контакти</a></li>
+            <li class="list-item">
+              <a href="#advantages" class="menu-link">Переваги</a>
+            </li>
+            <li class="list-item">
+              <a href="#work-stages" class="menu-link">Етапи роботи</a>
+            </li>
+            <li class="list-item">
+              <a href="#footer" class="menu-link">Контакти</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -70,30 +74,48 @@
       <section class="about-technology" id="about-technology">
         <div class="container">
           <div class="about-container">
-            <h3 class="title">СС</h3>
-            <div class="desc-box">
-              <p class="accent-desc">
-                — це комплекс високотехнологічного, інноваційного обладнання,
-              </p>
-              <p class="desc">
-                яке дозволить кожному переробнику, сільгоспвиробнику, чи
-                елеватору впровадити один із найважливіших елементів
-                LEAN-концепції на своїх підприємствах та підвищити ефективність
-                виробництва
-              </p>
+            <picture>
+              <source
+                srcset="
+                  ./src/img/about-technology/desktop-complex-1x.png 1x,
+                  ./src/img/about-technology/desktop-complex-2x.png 2x
+                "
+                width="515"
+                height="582"
+              />
+              <img
+                class="machine-image-desktop"
+                src="./src/img/about-technology/desktop-complex-1x.png"
+                alt="Сортувальна машина"
+                width="515"
+                height="582"
+              />
+            </picture>
+            <div class="technology-text-container">
+              <h3 class="title">СС</h3>
+              <div class="desc-box">
+                <p class="accent-desc">
+                  — це комплекс високотехнологічного, інноваційного обладнання,
+                </p>
+                <p class="desc">
+                  яке дозволить кожному переробнику, сільгоспвиробнику, чи
+                  елеватору впровадити один із найважливіших елементів
+                  LEAN-концепції на своїх підприємствах та підвищити
+                  ефективність виробництва
+                </p>
+                <div class="you-get-container desktop">
+                  <span class="attention-sign">!</span>
+                  <p class="you-get-text">
+                    <span>Ви отримаєте додатковий прибуток</span> з відходів
+                    очищення зернових та олійних культур шляхом вилучення всієї
+                    олійної або зернової домішки (зерно, подрібнене ядро,
+                    крупка)
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
           <picture>
-            <source
-              srcset="
-                ./img/portfolio-img/desktop/porfolio1-desktop-1x.jpg 1x,
-                ./img/portfolio-img/desktop/porfolio1-desktop-2x.jpg 2x,
-                ./img/portfolio-img/desktop/porfolio1-desktop-3x.jpg 3x
-              "
-              media="(min-width: 1200px)"
-              width="360"
-              height="300"
-            />
             <source
               srcset="
                 ./src/img/about-technology/mobile-complex-1x.png 1x,
@@ -103,14 +125,14 @@
               height="324"
             />
             <img
-              class="image"
+              class="machine-image-mobile"
               src="./src/img/about-technology/mobile-complex-1x.png"
               alt="Сортувальна машина"
               width="287"
               height="324"
             />
           </picture>
-          <div class="you-get-container">
+          <div class="you-get-container mobile">
             <span class="attention-sign">!</span>
             <p class="you-get-text">
               <span>Ви отримаєте додатковий прибуток</span> з відходів очищення
@@ -125,28 +147,34 @@
           <h2 class="title">
             Наше обладнання буде <span>найбільш ефективним для:</span>
           </h2>
-          <div class="main-reason-container">
-            <span class="card-number">1</span>
-            <div class="card-text-box">
-              <h3 class="card-title">Маслоекстракційних заводів, маслоцехів</h3>
-              <p class="card-text-accent">
-                Відсортує олійну домішку з відходів
-                <span>(від 20 до 50%)</span> та з лушпиння
-                <span>(від 2 до 10%)</span>
-              </p>
-              <p class="card-text">
-                Навіть у тих випадках, коли ваша лабораторія показує, що в них
-                нічого немає
-              </p>
+          <div class="our-equipment-desktop">
+            <div class="main-reason-container">
+              <span class="card-number">1</span>
+              <div class="card-text-box">
+                <h3 class="card-title">
+                  Маслоекстракційних заводів, маслоцехів
+                </h3>
+                <p class="card-text-accent">
+                  Відсортує олійну домішку з відходів
+                  <span>(від 20 до 50%)</span> та з лушпиння
+                  <span>(від 2 до 10%)</span>
+                </p>
+                <p class="card-text">
+                  Навіть у тих випадках, коли ваша лабораторія показує, що в них
+                  нічого немає
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="verify-container">
-            <p class="verify-title">*перевірити дуже легко і це безкоштовно</p>
-            <p class="verify-text">
-              Просто замовте дослідження від наших спеціалістів і ви багато
-              цікавого дізнаєтесь про свої втрати
-            </p>
-            <a class="btn-base verify-btn" href="">ХОЧУ ДОСлІДЖЕННЯ</a>
+            <div class="verify-container">
+              <p class="verify-title">
+                *перевірити дуже легко і це безкоштовно
+              </p>
+              <p class="verify-text">
+                Просто замовте дослідження від наших спеціалістів і ви багато
+                цікавого дізнаєтесь про свої втрати
+              </p>
+              <a class="btn-base verify-btn" href="">ХОЧУ ДОСлІДЖЕННЯ</a>
+            </div>
           </div>
           <div class="also-for-container">
             <h2 class="also-title">Також для:</h2>
@@ -259,24 +287,52 @@
             </p>
           </div>
           <div class="our-exp-container">
-            <svg class="logo-icon" width="64" height="64">
-              <use class="logo" href="./src/img/sprite.svg#icon-logo"></use>
-            </svg>
-            <p class="exp-text">
-              Понад 20 років досвіду в агропромисловому комплексі
-            </p>
+            <div class="exp-desktop-box">
+              <picture>
+                <source
+                  srcset="
+                    ./src/img/problem/certificate-desktop-1x.png 1x,
+                    ./src/img/problem/certificate-desktop-2x.png 2x
+                  "
+                  width="350"
+                  height="494"
+                />
+                <img
+                  class="certificate-image-desktop"
+                  src="./src/img/problem/certificate-desktop-1x.png"
+                  alt="сертифікат"
+                  width="350"
+                  height="494"
+                />
+              </picture>
+              <div class="exp-container">
+                <svg class="exp-icon" width="64" height="64">
+                  <use class="logo" href="./src/img/sprite.svg#icon-logo"></use>
+                </svg>
+                <p class="exp-text">
+                  Понад 20 років досвіду в агропромисловому комплексі
+                </p>
+              </div>
+            </div>
+            <picture>
+              <source
+                srcset="
+                  ./src/img/problem/desktop-photo-1x.png 1x,
+                  ./src/img/problem/desktop-photo-2x.png 2x
+                "
+                width="675"
+                height="506"
+              />
+              <img
+                class="team-image-desktop"
+                src="./src/img/problem/desktop-photo-1x.png"
+                alt="Наші фахівці"
+                width="675"
+                height="506"
+              />
+            </picture>
           </div>
           <picture>
-            <source
-              srcset="
-                ./img/portfolio-img/desktop/porfolio1-desktop-1x.jpg 1x,
-                ./img/portfolio-img/desktop/porfolio1-desktop-2x.jpg 2x,
-                ./img/portfolio-img/desktop/porfolio1-desktop-3x.jpg 3x
-              "
-              media="(min-width: 1200px)"
-              width="360"
-              height="300"
-            />
             <source
               srcset="
                 ./src/img/problem/mobile-photo-1x.png 1x,
@@ -286,7 +342,7 @@
               height="240"
             />
             <img
-              class="image"
+              class="team-image-mobile"
               src="./src/img/problem/mobile-photo-1x.png"
               alt="Наші фахівці"
               width="320"
@@ -307,16 +363,6 @@
           <picture>
             <source
               srcset="
-                ./img/portfolio-img/desktop/porfolio1-desktop-1x.jpg 1x,
-                ./img/portfolio-img/desktop/porfolio1-desktop-2x.jpg 2x,
-                ./img/portfolio-img/desktop/porfolio1-desktop-3x.jpg 3x
-              "
-              media="(min-width: 1200px)"
-              width="360"
-              height="300"
-            />
-            <source
-              srcset="
                 ./src/img/problem/certificate-1x.png 1x,
                 ./src/img/problem/certificate-2x.png 2x
               "
@@ -324,7 +370,7 @@
               height="282"
             />
             <img
-              class="certificate-image"
+              class="certificate-image-mobile"
               src="./src/img/problem/certificate-1x.png"
               alt="сертифікат"
               width="200"
@@ -389,162 +435,216 @@
             <h2 class="title">Наше обладнання</h2>
             <p class="subtitle">вже встановлено та працює на:</p>
           </div>
-          <ul class="marquee-container marquee-list">
-            <li class="list-item">
-              <picture>
-                <source
-                  srcset="
-                    ./img/portfolio-img/desktop/porfolio1-desktop-1x.jpg 1x,
-                    ./img/portfolio-img/desktop/porfolio1-desktop-2x.jpg 2x,
-                    ./img/portfolio-img/desktop/porfolio1-desktop-3x.jpg 3x
-                  "
-                  media="(min-width: 1200px)"
-                  width="360"
-                  height="300"
-                />
-                <source
-                  srcset="
-                    ./src/img/equip-installed/company-01-mobile-1x.png 1x,
-                    ./src/img/equip-installed/company-01-mobile-2x.png 2x
-                  "
-                  width="176"
-                  height="173"
-                />
-                <img
-                  class="company-image"
-                  src="./src/img/equip-installed/company-01-mobile-1x.png"
-                  alt="ТДВ “УкрОліяПродукт”"
-                  width="176"
-                  height="173"
-                />
-              </picture>
-              <p class="company-name">ТДВ “УкрОліяПродукт”</p>
-            </li>
-            <li class="list-item">
-              <picture>
-                <source
-                  srcset="
-                    ./img/portfolio-img/desktop/porfolio1-desktop-1x.jpg 1x,
-                    ./img/portfolio-img/desktop/porfolio1-desktop-2x.jpg 2x,
-                    ./img/portfolio-img/desktop/porfolio1-desktop-3x.jpg 3x
-                  "
-                  media="(min-width: 1200px)"
-                  width="360"
-                  height="300"
-                />
-                <source
-                  srcset="
-                    ./src/img/equip-installed/company-02-mobile-1x.png 1x,
-                    ./src/img/equip-installed/company-02-mobile-2x.png 2x
-                  "
-                  width="176"
-                  height="173"
-                />
-                <img
-                  class="company-image"
-                  src="./src/img/equip-installed/company-02-mobile-1x.png"
-                  alt="ТОВ “Потоки”"
-                  width="176"
-                  height="173"
-                />
-              </picture>
-              <p class="company-name">ТОВ “Потоки”</p>
-            </li>
-            <li class="list-item">
-              <picture>
-                <source
-                  srcset="
-                    ./img/portfolio-img/desktop/porfolio1-desktop-1x.jpg 1x,
-                    ./img/portfolio-img/desktop/porfolio1-desktop-2x.jpg 2x,
-                    ./img/portfolio-img/desktop/porfolio1-desktop-3x.jpg 3x
-                  "
-                  media="(min-width: 1200px)"
-                  width="360"
-                  height="300"
-                />
-                <source
-                  srcset="
-                    ./src/img/equip-installed/company-03-mobile-1x.png 1x,
-                    ./src/img/equip-installed/company-03-mobile-2x.png 2x
-                  "
-                  width="176"
-                  height="173"
-                />
-                <img
-                  class="company-image"
-                  src="./src/img/equip-installed/company-03-mobile-1x.png"
-                  alt="ТОВ “Люкс Ойл”"
-                  width="176"
-                  height="173"
-                />
-              </picture>
-              <p class="company-name">ТОВ “Люкс Ойл”</p>
-            </li>
-            <li class="list-item">
-              <picture>
-                <source
-                  srcset="
-                    ./img/portfolio-img/desktop/porfolio1-desktop-1x.jpg 1x,
-                    ./img/portfolio-img/desktop/porfolio1-desktop-2x.jpg 2x,
-                    ./img/portfolio-img/desktop/porfolio1-desktop-3x.jpg 3x
-                  "
-                  media="(min-width: 1200px)"
-                  width="360"
-                  height="300"
-                />
-                <source
-                  srcset="
-                    ./src/img/equip-installed/company-04-mobile-1x.png 1x,
-                    ./src/img/equip-installed/company-04-mobile-2x.png 2x
-                  "
-                  width="176"
-                  height="173"
-                />
-                <img
-                  class="company-image"
-                  src="./src/img/equip-installed/company-04-mobile-1x.png"
-                  alt="ПП “Віктор і К”"
-                  width="176"
-                  height="173"
-                />
-              </picture>
-              <p class="company-name">ПП “Віктор і К”</p>
-            </li>
-            <li class="list-item">
-              <picture>
-                <source
-                  srcset="
-                    ./img/portfolio-img/desktop/porfolio1-desktop-1x.jpg 1x,
-                    ./img/portfolio-img/desktop/porfolio1-desktop-2x.jpg 2x,
-                    ./img/portfolio-img/desktop/porfolio1-desktop-3x.jpg 3x
-                  "
-                  media="(min-width: 1200px)"
-                  width="360"
-                  height="300"
-                />
-                <source
-                  srcset="
-                    ./src/img/equip-installed/company-05-mobile-1x.png 1x,
-                    ./src/img/equip-installed/company-05-mobile-2x.png 2x
-                  "
-                  width="176"
-                  height="173"
-                />
-                <img
-                  class="company-image"
-                  src="./src/img/equip-installed/company-05-mobile-1x.png"
-                  alt="ТОВ “Гідросенд”"
-                  width="176"
-                  height="173"
-                />
-              </picture>
-              <p class="company-name">ТОВ “Гідросенд”</p>
-            </li>
-          </ul>
-          <div class="our-equipment-container">
-            <svg class="equip-icon" width="92" height="92">
-              <use class="logo" href="./src/img/sprite.svg#icon-logo"></use>
-            </svg>
+          <div class="desktop-box">
+            <ul class="marquee-container marquee-list-mobile">
+              <li class="list-item">
+                <picture>
+                  <source
+                    srcset="
+                      ./src/img/equip-installed/company-01-mobile-1x.png 1x,
+                      ./src/img/equip-installed/company-01-mobile-2x.png 2x
+                    "
+                    width="176"
+                    height="173"
+                  />
+                  <img
+                    class="company-image"
+                    src="./src/img/equip-installed/company-01-mobile-1x.png"
+                    alt="ТДВ “УкрОліяПродукт”"
+                    width="176"
+                    height="173"
+                  />
+                </picture>
+                <p class="company-name">ТДВ “УкрОліяПродукт”</p>
+              </li>
+              <li class="list-item">
+                <picture>
+                  <source
+                    srcset="
+                      ./src/img/equip-installed/company-02-mobile-1x.png 1x,
+                      ./src/img/equip-installed/company-02-mobile-2x.png 2x
+                    "
+                    width="176"
+                    height="173"
+                  />
+                  <img
+                    class="company-image"
+                    src="./src/img/equip-installed/company-02-mobile-1x.png"
+                    alt="ТОВ “Потоки”"
+                    width="176"
+                    height="173"
+                  />
+                </picture>
+                <p class="company-name">ТОВ “Потоки”</p>
+              </li>
+              <li class="list-item">
+                <picture>
+                  <source
+                    srcset="
+                      ./src/img/equip-installed/company-03-mobile-1x.png 1x,
+                      ./src/img/equip-installed/company-03-mobile-2x.png 2x
+                    "
+                    width="176"
+                    height="173"
+                  />
+                  <img
+                    class="company-image"
+                    src="./src/img/equip-installed/company-03-mobile-1x.png"
+                    alt="ТОВ “Люкс Ойл”"
+                    width="176"
+                    height="173"
+                  />
+                </picture>
+                <p class="company-name">ТОВ “Люкс Ойл”</p>
+              </li>
+              <li class="list-item">
+                <picture>
+                  <source
+                    srcset="
+                      ./src/img/equip-installed/company-04-mobile-1x.png 1x,
+                      ./src/img/equip-installed/company-04-mobile-2x.png 2x
+                    "
+                    width="176"
+                    height="173"
+                  />
+                  <img
+                    class="company-image"
+                    src="./src/img/equip-installed/company-04-mobile-1x.png"
+                    alt="ПП “Віктор і К”"
+                    width="176"
+                    height="173"
+                  />
+                </picture>
+                <p class="company-name">ПП “Віктор і К”</p>
+              </li>
+              <li class="list-item">
+                <picture>
+                  <source
+                    srcset="
+                      ./src/img/equip-installed/company-05-mobile-1x.png 1x,
+                      ./src/img/equip-installed/company-05-mobile-2x.png 2x
+                    "
+                    width="176"
+                    height="173"
+                  />
+                  <img
+                    class="company-image"
+                    src="./src/img/equip-installed/company-05-mobile-1x.png"
+                    alt="ТОВ “Гідросенд”"
+                    width="176"
+                    height="173"
+                  />
+                </picture>
+                <p class="company-name">ТОВ “Гідросенд”</p>
+              </li>
+            </ul>
+            <ul class="marquee-list-desktop">
+              <li class="list-item">
+                <picture>
+                  <source
+                    srcset="
+                      ./src/img/equip-installed/company-01-desktop-1x.png 1x,
+                      ./src/img/equip-installed/company-01-desktop-2x.png 2x
+                    "
+                    width="208"
+                    height="205"
+                  />
+                  <img
+                    class="company-image"
+                    src="./src/img/equip-installed/company-01-desktop-1x.png"
+                    alt="ТДВ “УкрОліяПродукт”"
+                    width="208"
+                    height="205"
+                  />
+                </picture>
+                <p class="company-name">ТДВ “УкрОліяПродукт”</p>
+              </li>
+              <li class="list-item">
+                <picture>
+                  <source
+                    srcset="
+                      ./src/img/equip-installed/company-02-desktop-1x.png 1x,
+                      ./src/img/equip-installed/company-02-desktop-2x.png 2x
+                    "
+                    width="208"
+                    height="205"
+                  />
+                  <img
+                    class="company-image"
+                    src="./src/img/equip-installed/company-02-desktop-1x.png"
+                    alt="ТОВ “Потоки”"
+                    width="208"
+                    height="205"
+                  />
+                </picture>
+                <p class="company-name">ТОВ “Потоки”</p>
+              </li>
+              <li class="list-item">
+                <picture>
+                  <source
+                    srcset="
+                      ./src/img/equip-installed/company-03-desktop-1x.png 1x,
+                      ./src/img/equip-installed/company-03-desktop-2x.png 2x
+                    "
+                    width="208"
+                    height="205"
+                  />
+                  <img
+                    class="company-image"
+                    src="./src/img/equip-installed/company-03-desktop-1x.png"
+                    alt="ТОВ “Люкс Ойл”"
+                    width="208"
+                    height="205"
+                  />
+                </picture>
+                <p class="company-name">ТОВ “Люкс Ойл”</p>
+              </li>
+              <li class="list-item">
+                <picture>
+                  <source
+                    srcset="
+                      ./src/img/equip-installed/company-04-desktop-1x.png 1x,
+                      ./src/img/equip-installed/company-04-desktop-2x.png 2x
+                    "
+                    width="208"
+                    height="205"
+                  />
+                  <img
+                    class="company-image"
+                    src="./src/img/equip-installed/company-04-desktop-1x.png"
+                    alt="ПП “Віктор і К”"
+                    width="208"
+                    height="205"
+                  />
+                </picture>
+                <p class="company-name">ПП “Віктор і К”</p>
+              </li>
+              <li class="list-item">
+                <picture>
+                  <source
+                    srcset="
+                      ./src/img/equip-installed/company-05-desktop-1x.png 1x,
+                      ./src/img/equip-installed/company-05-desktop-2x.png 2x
+                    "
+                    width="208"
+                    height="205"
+                  />
+                  <img
+                    class="company-image"
+                    src="./src/img/equip-installed/company-05-desktop-1x.png"
+                    alt="ТОВ “Гідросенд”"
+                    width="208"
+                    height="205"
+                  />
+                </picture>
+                <p class="company-name">ТОВ “Гідросенд”</p>
+              </li>
+            </ul>
+            <div class="our-equipment-container">
+              <svg class="equip-icon" width="92" height="92">
+                <use class="logo" href="./src/img/sprite.svg#icon-logo"></use>
+              </svg>
+            </div>
           </div>
         </div>
       </section>
@@ -658,7 +758,6 @@
             <svg class="footer-icon" width="56" height="56">
               <use class="logo" href="./src/img/sprite.svg#icon-logo"></use>
             </svg>
-
             <p class="company-name">
               ТОВ <br />
               "РІЕЛ ДРІМ ХХІ ВІК"
@@ -697,6 +796,7 @@
           <li class="list-item">
             <a href="" target="_blank" rel="nofollow">
               <img
+                class="footer-insta"
                 src="./src/img/footer-insta.svg"
                 alt="instagram logo"
                 width="28"
@@ -705,7 +805,7 @@
           </li>
           <li class="list-item">
             <a href="" target="_blank" rel="nofollow">
-              <svg class="footer-icon" width="28" height="28">
+              <svg class="footer-facebook-icon" width="28" height="28">
                 <use
                   class="logo"
                   href="./src/img/sprite.svg#icon-facebook"

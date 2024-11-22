@@ -14,7 +14,7 @@ body {
 body.is-hidden {
   overflow: hidden;
 
-  @media (1280px<=width) {
+  @media (1200px<=width) {
     overflow-y: scroll;
   }
 }
@@ -58,11 +58,11 @@ body::-webkit-scrollbar-track {
     max-width: 360px;
   }
 
-  @media (768px<=width) {
+  /* @media (768px<=width) {
     max-width: 768px;
-  }
+  } */
 
-  @media (1280px<=width) {
+  @media (1200px<=width) {
     max-width: 1200px;
     padding: 0 70px;
   }
