@@ -296,6 +296,11 @@
   margin: 0 auto 20px auto;
 }
 
+.technology-text-container {
+  display: flex;
+  gap: 4px;
+}
+
 .about-technology .title {
   color: var(--yellow-accent);
   font-family: 'Bebas Neue Cyrillic';
