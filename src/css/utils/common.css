@@ -58,9 +58,10 @@ body::-webkit-scrollbar-track {
     max-width: 360px;
   }
 
-  /* @media (768px<=width) {
+  @media (768px<=width) {
     max-width: 768px;
-  } */
+    padding: 0 40px;
+  }
 
   @media (1200px<=width) {
     max-width: 1200px;
